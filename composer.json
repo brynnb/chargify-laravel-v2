@@ -1,0 +1,34 @@
+{
+    "name": "brynnb/chargify-laravel-v2",
+    "description": "Laravel service provider for chargifys V2 API using the chargley chargify SDK.",
+    "keywords": ["laravel", "chargify", "chargley"],
+    "license": "Apache 2.0",
+    "homepage": "https://github.com/brynnb/chargify-laravel",
+    "authors": [
+        {
+            "name": "Andrew Lamers",
+            "email": "andrew.lamers@gmail.com"
+        },
+        {
+            "name": "Brynn Bateman",
+            "email": "github@brynnbateman.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.*",
+        "brynnb/chargify-sdk-php": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "brynnb\\ChargifyV2Laravel\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/brynnb/chargify-sdk-php"
+        }
+    ]
+}
