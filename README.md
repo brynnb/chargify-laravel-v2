@@ -65,3 +65,7 @@ How to Install
 			'api_secret' => env('CHARGIFY_DIRECT_SECRET'),
     );
     ```
+
+Credits
+---------------
+This is mostly the work of @andrewlamers, just modified a bit to work for ChargifyV2. Thanks Andrew!
