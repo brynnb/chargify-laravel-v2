@@ -17,18 +17,12 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "5.*",
-        "brynnb/chargify-sdk-php": "dev-master"
+        "JLMorales/chargify-sdk-php": "dev-master"
     },
     "autoload": {
         "psr-0": {
             "brynnb\\ChargifyV2Laravel\\": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/brynnb/chargify-sdk-php"
-        }
-    ]
+    "minimum-stability": "dev"
 }
