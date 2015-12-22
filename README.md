@@ -1,14 +1,11 @@
 ChargifyV2 Wrapper for Laravel 5 
 =====================================
 
-Uses 0.0.5 Chargify SDK
+Uses 0.0.5 Chargify SDK and an updated(forked) version of the PHP SDK that allows for newer versions of Guzzle.
 
 This is a wrapper using the chargley chargify SDK. It creates a service provider and facade for autoloading into laravel.
 
 This differs from the other Chargify Wrapper provided by Andrew Lamers in that it uses V2 of the API. For V1 methods, also use his.
-
-My version relies on my own fork of the PHP SDK that allows you to get the `_data` property of response from `call()`. 
-As far as I can tell from the documentation, `call()` is the only way to actually get error messages when using Chargify Direct, and the default implementation of the SDK did not give you access to this protected property. 
 
 Usage
 ---------------
