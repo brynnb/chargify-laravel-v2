@@ -24,5 +24,11 @@
             "brynnb\\ChargifyV2Laravel\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/JLMorales/chargify-sdk-php"
+        }
+    ]
 }
