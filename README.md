@@ -11,11 +11,9 @@ Usage
 ---------------
 
 ```php
-$response = ChargifyV2::call()->readByChargifyId($callID);
-$errorsArray = $response->getData()["response"]["result"]["errors"];
+$errorsArray = ChargifyV2::call()->readByChargifyId($callID)["response"]["result"]["errors"];
 ```
 
-Not the most elegant solution but it works and I can't really be bothered to contribute to Chargify's terrible platform more than I need to.
 
 How to Install
 ---------------
