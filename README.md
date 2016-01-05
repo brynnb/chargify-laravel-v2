@@ -32,7 +32,7 @@ How to Install
     # Add `ChargifyV2LaravelServiceProvider` to the `providers` array
     'providers' => array(
         ...
-        brynnb\ChargifyLaravel\ChargifyV2LaravelServiceProvider::class,
+        brynnb\ChargifyV2Laravel\ChargifyV2LaravelServiceProvider::class,
     )
 
     # Add the `ChargifyV2LaravelFacade` to the `aliases` array
