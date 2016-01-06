@@ -17,7 +17,7 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "5.*",
-        "chargely/chargify-sdk-php": "dev-master"
+        "brynnb/chargify-sdk-php": "dev-master"
     },
     "autoload": {
         "psr-0": {
@@ -28,7 +28,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/JLMorales/chargify-sdk-php"
+            "url": "https://github.com/brynnb/chargify-sdk-php"
         }
     ]
 }
