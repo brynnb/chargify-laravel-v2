@@ -1,11 +1,11 @@
 ChargifyV2 Wrapper for Laravel 5 
 =====================================
 
-Uses 0.0.5 Chargify SDK and an updated(forked) version of the PHP SDK that allows for newer versions of Guzzle.
+Uses 0.1.0 Chargify SDK that uses updated version of guzzle.
 
 This is a wrapper using the chargley chargify SDK. It creates a service provider and facade for autoloading into laravel.
 
-This differs from the other Chargify Wrapper provided by Andrew Lamers in that it uses V2 of the API. For V1 methods, also use his.
+This differs from the other Chargify Wrapper provided by Andrew Lamers in that it uses V2 of the API. For V1 methods, also use his ([or my fork of it](https://github.com/brynnb/chargify-laravel) if you need updated SDK/guzzle).
 
 Usage
 ---------------
@@ -20,11 +20,19 @@ How to Install
 
 ### Laravel 5.0
 
-1.  Install the `brynnb/chargify-laravel` package. Before this works, you also need to add this repository to your composer.json file (since this isn't a registered package).
+1.  Install the `brynnb/chargify-laravel-v2` package. Before this works, you also need to add this repository to your composer.json file (since this isn't a registered package).
+	```
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/brynnb/chargify-laravel-v2"
+		}
+		
+	]
+	```
 
-    ```shell
-    $ composer require brynnb/chargify-laravel-v2
-    ```
+    then `composer require brynnb/chargify-laravel-v2`
+    
 
 1. Update `config/app.php` to activate ChargifyLaravel
 
@@ -52,12 +60,9 @@ How to Install
 
     ```php
     return array(
-			'hostname' => env('CHARGIFY_HOSTNAME'),
-			'api_key' => env('CHARGIFY_KEY'),
-			'shared_key' => env('CHARGIFY_SHARED_KEY'),
 			'api_id' => env('CHARGIFY_DIRECT_API_ID'),
 			'api_password' => env('CHARGIFY_DIRECT_PASSWORD'),
-			'api_secret' => env('CHARGIFY_DIRECT_SECRET'),
+			'api_secret' => env('CHARGIFY_DIRECT_SECRET')
     );
     ```
 
