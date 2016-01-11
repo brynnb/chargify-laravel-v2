@@ -17,7 +17,7 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "5.*",
-        "chargely/chargify-sdk-php": "dev-master"
+        "chargely/chargify-sdk-php": "0.1.0"
     },
     "autoload": {
         "psr-0": {
